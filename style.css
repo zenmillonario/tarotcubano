@@ -347,3 +347,20 @@ footer{
 
   .features{ grid-template-columns:1fr; }
 }
+  .hero-slide{
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center top;
+    filter:brightness(1.25) contrast(1.05);
+  }
+
+  .hero-slideshow{
+    background:#050505;
+  }
+
+  .hero-slideshow::after{
+    background:linear-gradient(
+      rgba(0,0,0,.25),
+      rgba(0,0,0,.68)
+    );
+  }

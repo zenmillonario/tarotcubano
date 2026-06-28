@@ -409,3 +409,35 @@ footer{
   }
 }
 <link rel="stylesheet" href="style.css?v=3">
+/* MOBILE HERO REDESIGN */
+@media (max-width:850px){
+
+  .hero{
+    min-height:72vh;
+    background:
+      radial-gradient(circle at top, rgba(216,180,90,.18), transparent 45%),
+      #050505;
+  }
+
+  .hero-slideshow{
+    display:none !important;
+  }
+
+  .hero-content{
+    padding:90px 20px 50px;
+  }
+
+  h1{
+    font-size:clamp(42px,15vw,70px);
+    letter-spacing:4px;
+  }
+
+  .hero-tagline{
+    font-size:22px;
+  }
+
+  .subtitle{
+    font-size:19px;
+    max-width:330px;
+  }
+}

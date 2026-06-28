@@ -225,27 +225,6 @@ h2{
   margin:0 0 20px;
 }
 
-/* OLD CARD SAFETY */
-
-.card{
-  text-align:center;
-}
-
-.card h3{
-  text-align:center;
-  padding:0 20px;
-}
-
-.card p{
-  max-width:90%;
-  margin:0 auto 25px;
-  padding:0 20px;
-  text-align:center;
-  color:var(--soft);
-  font-size:20px;
-  line-height:1.6;
-}
-
 /* EDITION */
 
 .edition{
@@ -318,99 +297,13 @@ footer{
 /* MOBILE */
 
 @media(max-width:850px){
-  nav{ padding:18px; }
-
-  .nav-btn{ display:none; }
-
-  .hero-content{ padding:70px 20px; }
-
-  h1{
-    font-size:clamp(44px,13vw,72px);
-    letter-spacing:4px;
+  nav{
+    padding:18px;
   }
 
-  .featured-card{
-    grid-template-columns:1fr;
-    gap:40px;
-    padding:80px 24px;
-    text-align:center;
+  .nav-btn{
+    display:none;
   }
-
-  .featured-image img{ max-width:360px; }
-
-  .featured-text{
-    max-width:650px;
-    margin:0 auto;
-  }
-
-  .featured-text h2{ text-align:center; }
-
-  .features{ grid-template-columns:1fr; }
-}
-  .hero-slide{
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center top;
-    filter:brightness(1.25) contrast(1.05);
-  }
-
-  .hero-slideshow{
-    background:#050505;
-  }
-
-  .hero-slideshow::after{
-    background:linear-gradient(
-      rgba(0,0,0,.25),
-      rgba(0,0,0,.68)
-    );
-  }
-  /* MOBILE HERO FIX */
-@media (max-width:850px){
-
-  .hero{
-    min-height:100vh;
-    padding:20px;
-  }
-
-  .hero-slide{
-    background-size:contain !important;
-    background-repeat:no-repeat !important;
-    background-position:center center !important;
-    transform:none !important;
-    animation:none !important;
-  }
-
-  .hero-slide.active{
-    animation:none !important;
-  }
-
-  .hero-slideshow{
-    background:#050505 !important;
-  }
-
-  .hero-slideshow::after{
-    background:linear-gradient(
-      rgba(0,0,0,.15),
-      rgba(0,0,0,.70)
-    ) !important;
-  }
-
-  h1{
-    font-size:clamp(38px,12vw,62px);
-    letter-spacing:3px;
-  }
-
-  .hero-tagline{
-    font-size:22px;
-  }
-
-  .subtitle{
-    font-size:19px;
-  }
-}
-<link rel="stylesheet" href="style.css?v=3">
-/* MOBILE HERO REDESIGN */
-@media (max-width:850px){
 
   .hero{
     min-height:72vh;
@@ -439,5 +332,29 @@ footer{
   .subtitle{
     font-size:19px;
     max-width:330px;
+  }
+
+  .featured-card{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:80px 24px;
+    text-align:center;
+  }
+
+  .featured-image img{
+    max-width:360px;
+  }
+
+  .featured-text{
+    max-width:650px;
+    margin:0 auto;
+  }
+
+  .featured-text h2{
+    text-align:center;
+  }
+
+  .features{
+    grid-template-columns:1fr;
   }
 }

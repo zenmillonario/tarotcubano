@@ -352,11 +352,62 @@ h2{
 
 .order p{ margin-bottom:35px; }
 
-footer{
-  padding:28px;
+/* FOOTER */
+
+.site-footer{
+  padding:70px 24px 40px;
   text-align:center;
+  background:#050505;
+  border-top:1px solid rgba(216,180,90,.25);
+}
+
+.footer-logo{
+  font-family:'Cinzel', Georgia, serif;
+  color:var(--gold);
+  letter-spacing:4px;
+  font-size:24px;
+  margin-bottom:20px;
+}
+
+.footer-tagline{
+  max-width:620px;
+  margin:0 auto 18px;
+  color:var(--soft);
+  font-size:20px;
+  line-height:1.7;
+}
+
+.footer-intention{
+  color:var(--gold2);
+  font-size:18px;
+  margin:0 auto 32px;
+  font-style:italic;
+}
+
+.footer-socials{
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  flex-wrap:wrap;
+  margin-bottom:35px;
+}
+
+.footer-socials a{
+  color:var(--gold2);
+  text-decoration:none;
+  font-family:'Cinzel', Georgia, serif;
+  letter-spacing:1px;
+  font-size:15px;
+  transition:.3s ease;
+}
+
+.footer-socials a:hover{
+  color:white;
+}
+
+.footer-copy{
   color:#8f856d;
-  border-top:1px solid rgba(216,180,90,.2);
+  font-size:15px;
 }
 
 /* ANIMATIONS */

@@ -474,6 +474,43 @@ h2{
   transform:translateY(-8px) scale(1.02);
   box-shadow:0 35px 90px rgba(216,180,90,.22);
 }
+/* LIGHTBOX */
+
+.gallery-img{
+  cursor:pointer;
+}
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.92);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+  padding:30px;
+}
+
+.lightbox.active{
+  display:flex;
+}
+
+.lightbox img{
+  max-width:90vw;
+  max-height:88vh;
+  border-radius:18px;
+  border:1px solid rgba(216,180,90,.45);
+  box-shadow:0 30px 100px rgba(0,0,0,.85);
+}
+
+.lightbox-close{
+  position:absolute;
+  top:24px;
+  right:34px;
+  color:var(--gold2);
+  font-size:46px;
+  cursor:pointer;
+}
 /* MOBILE */
 
 @media(max-width:850px){

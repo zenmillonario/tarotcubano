@@ -52,14 +52,52 @@
   ],
   "description":"A luxury collector's tarot deck inspired by Cuban history, spirituality, ancestral memory and visionary storytelling.",
   "sku":"TC-001",
-  "brand":{"@type":"Brand","name":"ZenMillionaires"},
+  "brand":{
+    "@type":"Brand",
+    "name":"ZenMillionaires"
+  },
   "offers":{
     "@type":"Offer",
     "url":"https://checkout.square.site/merchant/VMNWS6K9Y9SN5/checkout/2YHWAYJMVBXQAORCO3OQRZGF",
     "price":"144.00",
     "priceCurrency":"USD",
     "availability":"https://schema.org/InStock",
-    "itemCondition":"https://schema.org/NewCondition"
+    "itemCondition":"https://schema.org/NewCondition",
+    "shippingDetails":{
+      "@type":"OfferShippingDetails",
+      "shippingRate":{
+        "@type":"MonetaryAmount",
+        "value":"16.00",
+        "currency":"USD"
+      },
+      "shippingDestination":{
+        "@type":"DefinedRegion",
+        "addressCountry":"US"
+      },
+      "deliveryTime":{
+        "@type":"ShippingDeliveryTime",
+        "handlingTime":{
+          "@type":"QuantitativeValue",
+          "minValue":1,
+          "maxValue":3,
+          "unitCode":"DAY"
+        },
+        "transitTime":{
+          "@type":"QuantitativeValue",
+          "minValue":3,
+          "maxValue":7,
+          "unitCode":"DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy":{
+      "@type":"MerchantReturnPolicy",
+      "applicableCountry":"US",
+      "returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays":14,
+      "returnMethod":"https://schema.org/ReturnByMail",
+      "returnFees":"https://schema.org/ReturnShippingFees"
+    }
   }
 }
 </script>
